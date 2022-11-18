@@ -8,7 +8,7 @@ import com.devsuperior.dsmeta.entities.Sale;
 import com.devsuperior.dsmeta.repositories.SaleRepository;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
-import com.twilio.rest.lookups.v1.PhoneNumber;
+import com.twilio.type.PhoneNumber;
 
 @Service
 public class SmsService {
@@ -39,8 +39,8 @@ public class SmsService {
 
 		Twilio.init(twilioSid, twilioKey);
 
-		PhoneNumber to =new PhoneNumber (twilioPhoneTo );
-		PhoneNumber from =new PhoneNumber(twilioPhoneFrom);
+		PhoneNumber to = new PhoneNumber (twilioPhoneTo );
+		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
 
 		Message message = Message.creator(to, from, msg).create();
 
