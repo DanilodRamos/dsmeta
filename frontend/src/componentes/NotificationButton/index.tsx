@@ -1,6 +1,8 @@
 import icon from '../../assets/img/notification-icon.svg';
 import './styles.css';
 import axios from 'axios';
+import {toast} from 'react-toastify';
+import {BASE_URL} from '../../utils/request';
 
 type Props ={
     saleId: number;
