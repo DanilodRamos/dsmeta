@@ -25,9 +25,11 @@ public class SmsService {
 	@Value("${twilio.phone.to}")
 	private String twilioPhoneTo;
 
-	private SaleRepository saleRepository;
+	
 
 	@Autowired
+	private SaleRepository saleRepository;
+
 	public void sendSms(Long saleId) {
 
 		Sale sale = saleRepository.findById(saleId).get();

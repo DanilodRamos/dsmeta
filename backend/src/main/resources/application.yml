@@ -1,4 +1,4 @@
-twilio.sid=${TWILIO_SID}
+twilio.=${TWILIO_SID}
 twilio.key=${TWILIO_KEY}
 twilio.phone.from=${TWILIO_PHONE_FROM}
 twilio.phone.to=${TWILIO_PHONE_TO}
@@ -12,4 +12,4 @@ spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 
 spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.format_sql=true 
